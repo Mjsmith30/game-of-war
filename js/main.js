@@ -31,6 +31,7 @@ function battle() {
     if (!gameOver) {
         var card1 = warPlayers[0].shift();
         var card2 = warPlayers[1].shift();
+        console.log(card1, card2)
         var cardContainer = [card1, card2];
         console.log("wP1:", wPlayer1)
         console.log("wP2:", wPlayer2)
@@ -45,12 +46,48 @@ function battle() {
     console.log(warPlayers)
 }
 function winningHand(card1, card2, cardContainer) {
-    if (card1.ranks > card2.ranks) {
-        card2.push(warPlayers[0]);
+    var card1Value, card2Value;
+    if(card1.Rank.length == 1){
+        card1Value = 11
+        console.log(card1Value)
+    } else {
+        console.log(card1.Rank)
+        var tmpVal = 0
+        card1.Rank.split('').forEach((el,i) => {
+            if(i > 0){
+                console.log(el)
+                tmpVal += el
+            }
+        })
+        card1Value = parseInt(tmpVal)
+        console.log(card1Value)
     }
-    else if (card1.ranks < card2.ranks) {
-        card1.push(warPlayer[1])
-    } else (card1.ranks === card2.ranks)
+    if(card2.Rank.length == 1){
+        card2Value = 11
+        console.log(card2Value)
+    } else {
+        console.log(card2.Rank)
+        var tmpVal = 0
+        card2.Rank.split('').forEach((el,i) => {
+            if(i > 0){
+                console.log(el)
+                tmpVal += el
+            }
+        })
+        card2Value = parseInt(tmpVal)
+        console.log(card2Value)
+    }
+    if (card1.Rank > card2.Rank) {
+        // card2.push(warPlayers[0]);
+        console.log("WINNER is card 1", card2)
+    }
+    else if (card1.Rank < card2.Rank) {
+        // card1.push(warPlayer[1])
+        console.log("WINNER is card 2", card1)
+    } else  {
+        console.log("AHHH TIE")
+    
+    }
     // alert("WAAAARRR!!!!!");  
 }
 
