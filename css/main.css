@@ -397,15 +397,64 @@ h1{
 main {
   display: grid;
   grid-column: span 2;
-  margin: 4vmin;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: red;
+  background-color: rgb(177, 164, 164);
+  padding: 30px;
+  margin: 7vmin;
+  border-width: 10px;
 }
-img{
+img {
   height: 200px;
   width: 50%;
 
+}
+#board {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}  
+  #allbuttons {
+  grid-column: span 2;
+  margin: 7vmin;
+  display: flex;
+  border-width: 10px;
+  font-size: 12px;
+  
+  }
+  button {
+       grid-column: span 2;
+    margin: 20vmin;
+    border-width: 20px;
+    font-size: 12px;
+    height: 100px;
+    width: 200px;
+  }
+  #playerScore {
+    color: aqua;
+
+  }
+  #p1{
+    color: beige;
+    box-shadow: -2px 2px 3px 3px rgba(41, 41, 41, 0.75); 
+    background-color:grey (255, 0, 0, 0.836);
+    width: 250px;
+    text-decoration-style: wavy;
+  }
+  p{
+  color: beige;
+  /* box-shadow: -2px 2px 3px 3px rgba(41, 41, 41, 0.75); */
+  background-color: grey (255, 0, 0, 0.836);
+  justify-items: center;
+  text-align: center;
+  text-decoration-style: wavy;
+}
+#gif{
+  background-color: darkslategray;
+  margin: 20px;
+  border-style: groove;
+  border-color: black;
+  width: fit-content;
 }

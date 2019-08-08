@@ -15,42 +15,54 @@
     </div>
 <main>
 
-    <header>This Means War</header>
-    <img src="css/image/espn.png" alt="Espn">
+    <header>UPPER HAND</header>
+    <!-- <img src="css/image/espn.png" alt="Espn"> -->
     <h1>Instructions</h1>
+    <section id = "p1">
     <p id = "instructions">Each Player turns up a card by clicking "Fuck you" and the player with the higher card takes both. Start by clicking start game, which will shuffle and deal 10 cards to each player. In order to win one player must collect 15 cards in total. 
         If the cards are the same rank each player will continue to draw until a higher card is drawn. The player with 
         higher card will be the winner and take both piles to win the game! 
     </p>
-    <h1 id = gif><iframe src="https://giphy.com/embed/xThuWtyb1yMlKIrz0c" width="480" height="271" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/showtime-xThuWtyb1yMlKIrz0c"></a></p></h1>
-    
-    <!--<svg>xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="223.228" height="311.811"><defs><pattern patternTransform="rotate(135 144.736 26.788) scale(.1564)" id="b" xlink:href="#a"/><pattern id="a" patternTransform="translate(-254.024 74.426)" height="110.741" width="108.618" patternUnits="userSpaceOnUse"><path d="M54.31 13.957l-10.765 16.12 7.177 18.007-18.658-5.256-14.907 12.39-.767-19.368L0 25.5l18.184-6.714L22.96 0l12.006 15.22zm-.753 69.023l-17.382 8.578-2.788 19.183-13.53-13.88-19.105 3.28 9.02-17.15-9.02-17.16 19.105 3.27 13.53-13.88 2.788 19.18zm55.06-69.023l-10.763 16.12 7.177 18.007-18.65-5.256-14.904 12.39-.77-19.368L54.31 25.5l18.183-6.714L77.27 0l12.005 15.22zm-.75 69.023l-17.383 8.578-2.787 19.183-13.53-13.88-19.106 3.28 9.02-17.15-9.02-17.158 19.11 3.27L87.7 55.22l2.785 19.18z" fill="#131f67"/></pattern></defs><g transform="translate(-260.433 -370.276)" stroke="#131f67" stroke-linecap="round"><rect ry="0" y="382.859" x="273.521" height="286.644" width="197.052" fill="none" stroke-width="4.952"/><path fill="url(#b)" d="M277.91 386.728h188.276v278.906H277.91z"/></g></svg>√-->
-      <div id= "wrapper"></div> 
+    </section>
+    <div class = gif wrapper>
+    <h1 id = "gif"><iframe src="https://giphy.com/embed/xThuWtyb1yMlKIrz0c" width="480" height="271" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/showtime-xThuWtyb1yMlKIrz0c"></a></p></h1>
+    </div>
+    <div id= "wrapper"></div> 
       <div id= "message"></div>
-      <div id="board"></div>
-    <!--player2score, player2score-->
-        <h2 class = "player1score" id = "playerscore">Player 1 </h2>
-        <h2 class = "player2score" id = "playerscore">Player 2 </h2>
-        <!--Player 1 and 2 cards and deck-->
-    <div class = "warCards"></div>
-    <p>Player 1 card</p>
-    <div class = "card3" id = "player1cards"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="223.228" height="311.811"><defs><pattern patternTransform="rotate(135 144.736 26.788) scale(.1564)" id="b" xlink:href="#a"/><pattern id="a" patternTransform="translate(-254.024 74.426)" height="110.741" width="108.618" patternUnits="userSpaceOnUse"><path d="M54.31 13.957l-10.765 16.12 7.177 18.007-18.658-5.256-14.907 12.39-.767-19.368L0 25.5l18.184-6.714L22.96 0l12.006 15.22zm-.753 69.023l-17.382 8.578-2.788 19.183-13.53-13.88-19.105 3.28 9.02-17.15-9.02-17.16 19.105 3.27 13.53-13.88 2.788 19.18zm55.06-69.023l-10.763 16.12 7.177 18.007-18.65-5.256-14.904 12.39-.77-19.368L54.31 25.5l18.183-6.714L77.27 0l12.005 15.22zm-.75 69.023l-17.383 8.578-2.787 19.183-13.53-13.88-19.106 3.28 9.02-17.15-9.02-17.158 19.11 3.27L87.7 55.22l2.785 19.18z" fill="#131f67"/></pattern></defs><g transform="translate(-260.433 -370.276)" stroke="#131f67" stroke-linecap="round"><rect ry="0" y="382.859" x="273.521" height="286.644" width="197.052" fill="none" stroke-width="4.952"/><path fill="url(#b)" d="M277.91 386.728h188.276v278.906H277.91z"/></g></svg></div>
-    <div class = "player1" id = "hand"></div>
-        <p>Player 2 Card</p>
-    <section class = "middle-ground"></section>
-    <div class = "card3" id = "player2cards"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="223.228" height="311.811"><defs><pattern patternTransform="rotate(135 144.736 26.788) scale(.1564)" id="b" xlink:href="#a"/><pattern id="a" patternTransform="translate(-254.024 74.426)" height="110.741" width="108.618" patternUnits="userSpaceOnUse"><path d="M54.31 13.957l-10.765 16.12 7.177 18.007-18.658-5.256-14.907 12.39-.767-19.368L0 25.5l18.184-6.714L22.96 0l12.006 15.22zm-.753 69.023l-17.382 8.578-2.788 19.183-13.53-13.88-19.105 3.28 9.02-17.15-9.02-17.16 19.105 3.27 13.53-13.88 2.788 19.18zm55.06-69.023l-10.763 16.12 7.177 18.007-18.65-5.256-14.904 12.39-.77-19.368L54.31 25.5l18.183-6.714L77.27 0l12.005 15.22zm-.75 69.023l-17.383 8.578-2.787 19.183-13.53-13.88-19.106 3.28 9.02-17.15-9.02-17.158 19.11 3.27L87.7 55.22l2.785 19.18z" fill="#131f67"/></pattern></defs><g transform="translate(-260.433 -370.276)" stroke="#131f67" stroke-linecap="round"><rect ry="0" y="382.859" x="273.521" height="286.644" width="197.052" fill="none" stroke-width="4.952"/><path fill="url(#b)" d="M277.91 386.728h188.276v278.906H277.91z"/></g></svg></div>
-    <div class = "player2" id = "hand"></div>
+      <div id="board">
+        
+        <section class = "middle-ground">
+            <p>Player 1 </p>
+            <div class = "card3" id = "player1cards"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="223.228" height="311.811"><defs><pattern patternTransform="rotate(135 144.736 26.788) scale(.1564)" id="b" xlink:href="#a"/><pattern id="a" patternTransform="translate(-254.024 74.426)" height="110.741" width="108.618" patternUnits="userSpaceOnUse"><path d="M54.31 13.957l-10.765 16.12 7.177 18.007-18.658-5.256-14.907 12.39-.767-19.368L0 25.5l18.184-6.714L22.96 0l12.006 15.22zm-.753 69.023l-17.382 8.578-2.788 19.183-13.53-13.88-19.105 3.28 9.02-17.15-9.02-17.16 19.105 3.27 13.53-13.88 2.788 19.18zm55.06-69.023l-10.763 16.12 7.177 18.007-18.65-5.256-14.904 12.39-.77-19.368L54.31 25.5l18.183-6.714L77.27 0l12.005 15.22zm-.75 69.023l-17.383 8.578-2.787 19.183-13.53-13.88-19.106 3.28 9.02-17.15-9.02-17.158 19.11 3.27L87.7 55.22l2.785 19.18z" fill="#131f67"/></pattern></defs><g transform="translate(-260.433 -370.276)" stroke="#131f67" stroke-linecap="round"><rect ry="0" y="382.859" x="273.521" height="286.644" width="197.052" fill="none" stroke-width="4.952"/><path fill="url(#b)" d="M277.91 386.728h188.276v278.906H277.91z"/></g></svg></div>
+            <div class = "player1" id = "hand"></div>
+            <!-- player one -->
+            <h2 class = "player1score" id = "playerscore"></h2>
+        </section>
+        <div class = "warCards"></div>
+        <section class = "middle-ground">
+            <p>Player 2 </p>
+            <div class = "card3" id = "player2cards"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="223.228" height="311.811"><defs><pattern patternTransform="rotate(135 144.736 26.788) scale(.1564)" id="b" xlink:href="#a"/><pattern id="a" patternTransform="translate(-254.024 74.426)" height="110.741" width="108.618" patternUnits="userSpaceOnUse"><path d="M54.31 13.957l-10.765 16.12 7.177 18.007-18.658-5.256-14.907 12.39-.767-19.368L0 25.5l18.184-6.714L22.96 0l12.006 15.22zm-.753 69.023l-17.382 8.578-2.788 19.183-13.53-13.88-19.105 3.28 9.02-17.15-9.02-17.16 19.105 3.27 13.53-13.88 2.788 19.18zm55.06-69.023l-10.763 16.12 7.177 18.007-18.65-5.256-14.904 12.39-.77-19.368L54.31 25.5l18.183-6.714L77.27 0l12.005 15.22zm-.75 69.023l-17.383 8.578-2.787 19.183-13.53-13.88-19.106 3.28 9.02-17.15-9.02-17.158 19.11 3.27L87.7 55.22l2.785 19.18z" fill="#131f67"/></pattern></defs><g transform="translate(-260.433 -370.276)" stroke="#131f67" stroke-linecap="round"><rect ry="0" y="382.859" x="273.521" height="286.644" width="197.052" fill="none" stroke-width="4.952"/><path fill="url(#b)" d="M277.91 386.728h188.276v278.906H277.91z"/></g></svg></div>
+            <div class = "player2" id = "hand"></div>
+            <!-- player two -->
+            <h2 class = "player2score" id = "playerscore"></h2>
+        </section>
         
         <!--WINNING FOR PLAYER 1 AND PLAYER 2-->
         
         <!--Generates a card face up for player 1 and 2-->
-    <div id="kickstart"></div>
-    <button id = "player1button" type="button" class="btn">Gamer 1</button>
-    <button id = "player2button" type="button" class="btn"> Gamer 2</button>
-   
-        <!--Reshuffles the Deck for new game-->
-    <!--<div><button id = "button" class = "deal" onclick="shuffle()">Re-Shuffle-Cards</button></div>-->
-    <button class = "NewGame" onclick = "document.location.reload()">New Game</button>
+        <!-- <div id="kickstart"></div> -->
+    </div>
+    <div id="all-buttons">
+        <button id = "player1button" type="button" class="btn">FIGHT!</button>
+        <!-- <button id = "player2button" type="button" class="btn"> Gamer 2</button> -->
+        
+            <!--Reshuffles the Deck for new game-->
+        <!--<div><button id = "button" class = "deal" onclick="shuffle()">Re-Shuffle-Cards</button></div>-->
+        <button class = "NewGame" onclick = "document.location.reload()">New Game</button>
+
+    </div>
+    <!--player2score, player2score-->
+    <!--Player 1 and 2 cards and deck-->
     
 </main>
 </body>

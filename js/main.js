@@ -42,8 +42,8 @@ function battle() {
         // wPlayer1.innerHTML = flipCard(card1)
         // wPlayer2.innerHTML = flipCard(card2)
         winningHand(card1, card2, cardContainer)
-        gamer1score.innerHTML = `Player 1 Score =  ${warPlayers[0].length}`;
-        gamer2score.innerHTML = `Player 2 Score =  ${warPlayers[1].length}`;
+        gamer1score.innerHTML = `Score =  ${warPlayers[0].length}`;
+        gamer2score.innerHTML = `Score =  ${warPlayers[1].length}`;
 
     }
     isGameOver()
@@ -52,7 +52,7 @@ function battle() {
 }
 function winningHand(card1, card2, cardContainer) {
     var card1Value, card2Value;
-    if(card1.Rank.length == 1){
+    if (card1.Rank.length == 1){
         card1Value = 11
         console.log(card1Value)
     } else {
@@ -67,7 +67,7 @@ function winningHand(card1, card2, cardContainer) {
         card1Value = parseInt(tmpVal)
         console.log(card1Value)
     }
-    if(card2.Rank.length == 1){
+    if (card2.Rank.length == 1){
         card2Value = 11
         console.log(card2Value)
     } else {
