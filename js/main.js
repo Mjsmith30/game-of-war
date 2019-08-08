@@ -17,6 +17,8 @@ var wPlayer1 = document.getElementById("player1cards");
 var wPlayer2 = document.getElementById("player2cards");
 var gamer1 = document.querySelector(".player1 .player1score");
 var gamer2 = document.querySelector(".player2 .player2score");
+let gamer1score = document.querySelector(".player1score");
+let gamer2score = document.querySelector(".player2score");
 function fight() {
     if (firstRun) {
         firstRun = false;
@@ -26,7 +28,7 @@ function fight() {
 }
 //functions for the 52 cards
 function battle() {
-    buildDeck()
+    fight()
 
     if (!gameOver) {
         var card1 = warPlayers[0].shift();
@@ -40,10 +42,13 @@ function battle() {
         // wPlayer1.innerHTML = flipCard(card1)
         // wPlayer2.innerHTML = flipCard(card2)
         winningHand(card1, card2, cardContainer)
+        gamer1score.innerHTML = `Player 1 Score =  ${warPlayers[0].length}`;
+        gamer2score.innerHTML = `Player 2 Score =  ${warPlayers[1].length}`;
 
     }
+    isGameOver()
 
-    console.log(warPlayers)
+    // console.log(warPlayers) 
 }
 function winningHand(card1, card2, cardContainer) {
     var card1Value, card2Value;
@@ -78,23 +83,24 @@ function winningHand(card1, card2, cardContainer) {
         console.log(card2Value)
     }
     if (card1.Rank > card2.Rank) {
-        // card2.push(warPlayers[0]);
+        warPlayers[0].push(card1, card2);
         console.log("WINNER is card 1", card2)
     }
     else if (card1.Rank < card2.Rank) {
-        // card1.push(warPlayer[1])
+        warPlayers[1].push(card2, card1)
         console.log("WINNER is card 2", card1)
     } else  {
         console.log("AHHH TIE")
     
     }
     // alert("WAAAARRR!!!!!");  
+    console.log(warPlayers)
 }
 
 //rendering cards in dom
 function flipCard(fc) {
     // var myCards = fc.ranks + "&" + fc.suits + ";";
-    var newCard = `<div class = "card ${fc.Rank} ${fc.Suit}" id = "player1cards"></div>`
+    var newCard = `<div class = "card ${fc.Suit} ${fc.Rank}" id = "player1cards"></div>`
     console.log(newCard);
     return newCard;
 }
@@ -144,6 +150,14 @@ function splitCards(arr) {
     console.log(warPlayers)
 }
 
+function isGameOver(){
+    if(warPlayers[0].length < 22){
+        alert("PLAYER 2 WINS")
+    }
+    if(warPlayers[1].length < 22){
+        alert("PLAYER 1 WINS")
+    }
+}
 
         // while (i != deck.length){
         //     player1.push(deck[i+1]);
