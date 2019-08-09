@@ -82,18 +82,22 @@ function winningHand(card1, card2, cardContainer) {
         card2Value = parseInt(tmpVal)
         console.log(card2Value)
     }
-    if (card1.Rank > card2.Rank) {
+    if (card1Value > card2Value) {
         warPlayers[0].push(card1, card2);
-        console.log("WINNER is card 1", card2)
+        console.log(card1Value,"hehrhe")
+        console.log(card2Value,"hehrhe")
+        console.log("WINNER is card 1", card1)
     }
-    else if (card1.Rank < card2.Rank) {
+    else if (card1Value < card2Value) {
         warPlayers[1].push(card2, card1)
-        console.log("WINNER is card 2", card1)
+        console.log(card1Value,"hehrhe")
+        console.log(card2Value,"hehrhe")
+        console.log("WINNER is card 2", card2)
     } else  {
         console.log("AHHH TIE")
+        alert("WAAAARRR!!!!!");  
     
     }
-    // alert("WAAAARRR!!!!!");  
     console.log(warPlayers)
 }
 

@@ -359,7 +359,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background-color: rgb(177, 164, 164);
+      background-color: darkred;
     }
     img {
       height: 200px;
@@ -396,8 +396,8 @@
     
   
    #instructions{
-    color: aqua;
+    color: beige;
     width: 250px;
-
+    background-color: black
    }
     
